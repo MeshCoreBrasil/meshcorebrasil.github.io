@@ -1,4 +1,4 @@
-Este formulário ajuda a gerar nomes padronizados para repetidoras **MeshCore** no Brasil. As abreviações são únicas para cada município em todo território nacional.
+Este formulário ajuda a gerar nomes padronizados para repetidoras **MeshCore** no Brasil. As abreviações são únicas para cada município em todo território nacional. 
 
 <form class="repeater-form">
     <div class="form-group">
@@ -103,3 +103,8 @@ Exemplos:
 | `SAO-PAULISTA-9D4E` | Repetidora na Paulista, São Paulo |
 | `SBC-VILANOVA-3C7D` | Repetidora na Vila Nova, São Paulo |
 
+**Últimas Alterações**
+
+**07/06/2026** - Dado o crescimento da rede MeshCore, houve a necessidade de criar abreviações únicas para cada cidade no Brasil a fim de evitar conflitos. Dessa forma, o usuário não digita mais manualmente o nome da cidade, mas seleciona de uma lista. A abreviação de cada cidade é dada agora pela denominação das Nações Unidas.
+
+**20/04/2026** - Primeira versão da ferramenta. Utiliza o algoritmo que toma a primeira letra de cada palavra do nome da cidade. Caso a letra consecutiva se repita, a próxima é utilizada, e assim por diante.
