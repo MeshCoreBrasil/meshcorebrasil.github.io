@@ -36,6 +36,7 @@ theme:
 
 markdown_extensions:
   - admonition
+  - md_in_html
 
 nav:
   - Brasil: index.md

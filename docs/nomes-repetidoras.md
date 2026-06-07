@@ -79,6 +79,14 @@ Este formulário ajuda a gerar nomes padronizados para repetidoras **MeshCore** 
     </div>
 </div>
 
+<div class="warning" markdown="1">
+**Atenção!** Após ajustar o nome da repetidora, lembre-se de:
+
+**1)  Anunciar a repetidora**: na aba "Definições" do gerenciamento remoto, clique em "Anúncio".
+
+**2)  Reenviar a repetidora para o mapa da Internet**: Na tela anterior, na sua lista de contatos, clique nos três pontos ao lado do nome da repetidora > "Partilhar" > "Carregar para Mapa da Internet".
+</div>
+
 **Explicação**
 
 Os nomes das repetidoras seguem o formato:
@@ -101,7 +109,7 @@ Exemplos:
 |------|-----------|
 | `SOR-SAOBENTO-A1B2` | Repetidora no mosteiro São Bento de Sorocaba |
 | `SAO-PAULISTA-9D4E` | Repetidora na Paulista, São Paulo |
-| `SBC-VILANOVA-3C7D` | Repetidora na Vila Nova, São Paulo |
+| `SBC-VILANOVA-3C7D` | Repetidora na Vila Nova, São Bernardo do Campo |
 
 **Últimas Alterações**
 

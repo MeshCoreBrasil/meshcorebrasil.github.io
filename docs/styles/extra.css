@@ -254,6 +254,23 @@ nav.vertical .nav-item ul {
 	margin-left: 0.25rem;
 }
 
+/* Warning callout box */
+.warning {
+	background-color: rgba(255, 183, 77, 0.12);
+	border: 1px solid rgba(255, 183, 77, 0.3);
+	border-left: 4px solid #ffb74d;
+	border-radius: 0.5rem;
+	padding: 1rem 1.25rem;
+	margin: 1rem 0;
+	color: var(--md-default-fg-color--light);
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+.warning strong {
+	color: #ffb74d;
+}
+
 /* Character limit warning */
 .char-limit-warning {
 	background-color: rgba(255, 87, 87, 0.1);
@@ -264,4 +281,63 @@ nav.vertical .nav-item ul {
 	margin: 0.75rem 0;
 	color: #ff6b6b;
 	font-size: 0.9rem;
+}
+
+/* Mobile responsiveness: bump up font sizes so form fields
+   appear roughly the same visual size on phone screens */
+@media screen and (max-width: 768px) {
+	.repeater-form {
+		padding: 1rem;
+	}
+
+	.repeater-form label {
+		font-size: 1.1rem;
+	}
+
+	.repeater-form input,
+	.repeater-form select {
+		font-size: 1.1rem;
+		padding: 0.85rem;
+	}
+
+	.form-hint {
+		font-size: 1rem;
+	}
+
+	.md-button {
+		font-size: 1.1rem;
+		padding: 0.75rem 1.5rem;
+	}
+
+	.generated-name {
+		font-size: 1.3rem;
+	}
+
+	.copy-button {
+		font-size: 1.05rem;
+	}
+
+	.abbreviation-label {
+		font-size: 1.05rem;
+	}
+
+	.abbreviation-value {
+		font-size: 1.3rem;
+	}
+
+	.char-counter {
+		font-size: 1rem;
+	}
+
+	.warning {
+		font-size: 1.05rem;
+	}
+
+	.char-limit-warning {
+		font-size: 1.05rem;
+	}
+
+	.result-box h3 {
+		font-size: 1.5rem;
+	}
 }
