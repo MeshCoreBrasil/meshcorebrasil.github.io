@@ -39,7 +39,7 @@ markdown_extensions:
 
 nav:
   - Brasil: index.md
-  - Normalizador de Nomes para Repetidoras: normalizador-de-nomes-repetidoras.md
+  - Gerador de Nomes para Repetidoras: nomes-repetidoras.md
 
 extra_css:
   - styles/extra.css
