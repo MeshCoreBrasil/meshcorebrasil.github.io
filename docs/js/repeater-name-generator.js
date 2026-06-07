@@ -7,12 +7,12 @@
  * Data format: { "UF": [ { "abbr": "SOR", "name": "Sorocaba" }, ... ], ... }
  */
 
-let cityData = null;
+var cityData = null;
 
 /**
  * State names mapping (UF -> full name)
  */
-const stateNames = {
+var stateNames = {
     'AC': 'Acre',
     'AL': 'Alagoas',
     'AM': 'Amazonas',
