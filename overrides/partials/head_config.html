@@ -1,77 +1,7 @@
 
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     <style>
-      /* load heading font */
-      {% if config.theme.heading_font_files.regular %}@font-face {
-        font-family: "{{ config.theme.heading_font }}";
-        src: url('{{ config.theme.heading_font_files.regular | url }}');
-        font-weight: 400;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.heading_font }}:wght@400');{% endif %}
-      {% if config.theme.heading_font_files.italic %}@font-face {
-        font-family: "{{ config.theme.heading_font }}";
-        src: url('{{ config.theme.heading_font_files.italic | url }}');
-        font-style: italic;
-        font-weight: 400;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.heading_font }}:ital,wght@400');{% endif %}
-      {% if config.theme.heading_font_files.bold %}@font-face {
-        font-family: "{{ config.theme.heading_font }}";
-        src: url('{{ config.theme.heading_font_files.bold | url }}');
-        font-weight: 700;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.heading_font }}:wght@700');{% endif %}
-      {% if config.theme.heading_font_files.bold_italic %}@font-face {
-        font-family: "{{ config.theme.heading_font }}";
-        src: url('{{ config.theme.heading_font_files.bold_italic | url }}');
-        font-style: italic;
-        font-weight: 700;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.heading_font }}:ital,wght@700');{% endif %}
-
-      /* load body font */
-      {% if config.theme.body_font_files.regular %}@font-face {
-        font-family: "{{ config.theme.body_font }}";
-        src: url('{{ config.theme.body_font_files.regular | url }}');
-        font-weight: 400;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}:wght@400');{% endif %}
-      {% if config.theme.body_font_files.italic %}@font-face {
-        font-family: "{{ config.theme.body_font }}";
-        src: url('{{ config.theme.body_font_files.italic | url }}');
-        font-style: italic;
-        font-weight: 400;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}:ital,wght@400');{% endif %}
-      {% if config.theme.body_font_files.bold %}@font-face {
-        font-family: "{{ config.theme.body_font }}";
-        src: url('{{ config.theme.body_font_files.bold | url }}');
-        font-weight: 700;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}:wght@700');{% endif %}
-      {% if config.theme.body_font_files.bold_italic %}@font-face {
-        font-family: "{{ config.theme.body_font }}";
-        src: url('{{ config.theme.body_font_files.bold_italic | url }}');
-        font-style: italic;
-        font-weight: 700;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.body_font }}:ital,wght@700');{% endif %}
-
-      /* load mono font */
-      {% if config.theme.mono_font_files.regular %}@font-face {
-        font-family: "{{ config.theme.mono_font }}";
-        src: url('{{ config.theme.mono_font_files.regular | url }}');
-        font-weight: 400;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}:wght@400');{% endif %}
-      {% if config.theme.mono_font_files.italic %}@font-face {
-        font-family: "{{ config.theme.mono_font }}";
-        src: url('{{ config.theme.mono_font_files.italic | url }}');
-        font-style: italic;
-        font-weight: 400;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}:ital,wght@400');{% endif %}
-      {% if config.theme.mono_font_files.bold %}@font-face {
-        font-family: "{{ config.theme.mono_font }}";
-        src: url('{{ config.theme.mono_font_files.bold | url }}');
-        font-weight: 700;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}:wght@700');{% endif %}
-      {% if config.theme.mono_font_files.bold_italic %}@font-face {
-        font-family: "{{ config.theme.mono_font }}";
-        src: url('{{ config.theme.mono_font_files.bold_italic | url }}');
-        font-style: italic;
-        font-weight: 700;
-      }{% else %}@import url('https://fonts.googleapis.com/css2?family={{ config.theme.mono_font }}:ital,wght@700');{% endif %}
+      /* heading, body, and mono fonts use system font stacks (no Google Fonts) */
 
       /* load emoji font */
       {% if config.theme.emoji_font_files.regular %}@font-face {
@@ -104,10 +34,10 @@
         --crust-text: {{config.theme.crust_text_color_dark}};
         --overlay-text: {{config.theme.overlay_text_color_dark}};
         --footer-text: var(--text);
-        /* fonts */
-        --heading: {{config.theme.heading_font}}, {{config.theme.emoji_font}};
-        --body: {{config.theme.body_font}}, {{config.theme.emoji_font}};
-        --mono: {{config.theme.mono_font}}, {{config.theme.emoji_font}};
+        /* fonts — system font stacks for fast loading */
+        --heading: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, {{config.theme.emoji_font}};
+        --body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif, {{config.theme.emoji_font}};
+        --mono: "Cascadia Code", "Fira Code", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace, {{config.theme.emoji_font}};
         font-family: var(--body); 
       }
       /* style settings */
@@ -162,9 +92,7 @@
     <script src="{{ script | url }}"{% if script.endswith(".mjs") %} type="module"{% endif %}></script>
     {%- endif %}
     {%- endfor %}
-    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
-    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
-    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script defer src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
     <script>
       function on_share() {
         navigator.share({

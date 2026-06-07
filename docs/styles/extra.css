@@ -48,7 +48,7 @@ nav.vertical .nav-item ul {
 	border-radius: 0.25rem;
 	color: var(--md-default-fg-color--light);
 	font-size: 1rem;
-	font-family: "Inter", sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 	transition: border-color 0.2s ease;
 }
 
@@ -105,7 +105,7 @@ nav.vertical .nav-item ul {
 	background-color: #3a3a3a;
 	color: var(--md-default-fg-color--light);
 	font-size: 0.95rem;
-	font-family: "Inter", sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 	cursor: pointer;
 	transition: all 0.2s ease;
 }
@@ -153,7 +153,7 @@ nav.vertical .nav-item ul {
 	margin-top: 0;
 	margin-bottom: 1rem;
 	color: #70a2e4;
-	font-family: "Rubik", sans-serif;
+	font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .generated-name-container {
@@ -164,7 +164,7 @@ nav.vertical .nav-item ul {
 }
 
 .generated-name {
-	font-family: "JetBrains Mono", "Fira Code", monospace;
+	font-family: "Cascadia Code", "Fira Code", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 	font-size: 1.5rem;
 	font-weight: 600;
 	color: var(--md-default-fg-color--light);
@@ -213,7 +213,7 @@ nav.vertical .nav-item ul {
 }
 
 .abbreviation-value {
-	font-family: "JetBrains Mono", "Fira Code", monospace;
+	font-family: "Cascadia Code", "Fira Code", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 	font-size: 1.1rem;
 	font-weight: 600;
 	color: #70a2e4;
@@ -231,7 +231,7 @@ nav.vertical .nav-item ul {
 }
 
 .char-counter-value {
-	font-family: "JetBrains Mono", "Fira Code", monospace;
+	font-family: "Cascadia Code", "Fira Code", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 	font-weight: 600;
 	color: var(--md-default-fg-color--light);
 }
@@ -245,7 +245,7 @@ nav.vertical .nav-item ul {
 }
 
 .char-counter-limit {
-	font-family: "JetBrains Mono", "Fira Code", monospace;
+	font-family: "Cascadia Code", "Fira Code", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 	font-weight: 600;
 	color: #999;
 }
