@@ -48,9 +48,6 @@ Utilize o [Gerador de Nomes de Repetidoras](nomes-repetidoras.md) para criar um 
 - [Rservis](https://nbp.rservis.net/): Calculadora de visada, exibe também Zona de Fresnel para frequência escolhida.
 - [Solwise Elevation Tool](https://www.solwise.co.uk/wireless-elevationtool.html): Outra calculadora de visada. Fácil de usar e com perfis claros.
 
-### Normalizador de Nomes para Repetidoras
-
-
 ---
 
 *Última atualização: Junho 2026*
