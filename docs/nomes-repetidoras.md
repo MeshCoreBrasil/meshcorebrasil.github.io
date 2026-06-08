@@ -1,3 +1,5 @@
+## Início
+
 Este formulário ajuda a gerar nomes padronizados para repetidoras **MeshCore** no Brasil. As abreviações são únicas para cada município em todo território nacional. 
 
 <form class="repeater-form">
@@ -77,6 +79,8 @@ Este formulário ajuda a gerar nomes padronizados para repetidoras **MeshCore** 
             📋 Copiar
         </button>
     </div>
+
+
 </div>
 
 <div class="warning" markdown="1">
@@ -87,7 +91,9 @@ Este formulário ajuda a gerar nomes padronizados para repetidoras **MeshCore** 
 **2)  Reenviar a repetidora para o mapa da Internet**: Na tela anterior, na sua lista de contatos, clique nos três pontos ao lado do nome da repetidora > "Partilhar" > "Carregar para Mapa da Internet".
 </div>
 
-**Explicação**
+<br>
+
+## Explicação
 
 Os nomes das repetidoras seguem o formato:
 
@@ -103,15 +109,22 @@ Onde:
 - **REGIONAL**: Identificador regional como bairro, ponto de referência ou localidade (maiúsculo)
 - **PUBKEY**: Primeiros **4 dígitos** da chave pública (public key) do dispositivo em hexadecimal (maiúsculo)
 
+A padronização dos nomes das repetidoras ajuda os usuários da rede a saberem exatamente o caminho que suas mensagens estão tomando. Além disso, os 4 caracteres da chave pública auxiliam nas análises de pacotes, tanto no app quanto nas plataformas web.
+
+É sugerido que apenas os dispositivos repetidores tenham o nome padronizado. Os dispositivos pessoais (companions) são livres para serem nomeados de qualquer maneira.
+
 Exemplos:
 
-| Nome | Descrição |
-|------|-----------|
-| `SOR-SAOBENTO-A1B2` | Repetidora no mosteiro São Bento de Sorocaba |
-| `SAO-PAULISTA-9D4E` | Repetidora na Paulista, São Paulo |
-| `SBC-VILANOVA-3C7D` | Repetidora na Vila Nova, São Bernardo do Campo |
+- `SOR-SAOBENTO-A1B2`: Repetidora no mosteiro São Bento de Sorocaba 
+- `SAO-PAULISTA-9D4E`:  Repetidora na Paulista, São Paulo 
+- `SBC-VILANOVA-3C7D`: Repetidora na Vila Nova, São Bernardo do Campo 
 
-**Últimas Alterações**
+## Consulta reversa
+
+Para saber a qual cidade uma abreviação se refere, consulte o [Código das Nações Unidas para o Comércio e Transportes Locais (UN/LOCODE)](https://unlocode.unece.org/directory/locodes/?country=BR). 
+
+
+## Últimas Alterações
 
 **07/06/2026** - Dado o crescimento da rede MeshCore, houve a necessidade de criar abreviações únicas para cada cidade no Brasil a fim de evitar conflitos. Dessa forma, o usuário não digita mais manualmente o nome da cidade, mas seleciona de uma lista. A abreviação de cada cidade é dada agora pela denominação das Nações Unidas.
 

@@ -46,6 +46,7 @@ nav.vertical .nav-item ul {
 .repeater-form input,
 .repeater-form select {
 	width: 100%;
+	box-sizing: border-box;
 	padding: 0.75rem;
 	background-color: #2a2a2a;
 	border: 1px solid #4a4a4a;
