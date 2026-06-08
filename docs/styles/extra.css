@@ -2,6 +2,10 @@
     font-size: 1.0rem;
 }
 
+pre {
+    font-size: 0.85rem;
+}
+
 p#tagline {
     font-size: 2.25rem !important;
     text-align: right;
@@ -288,13 +292,15 @@ nav.vertical .nav-item ul {
    theme uses rem units, this scales all text proportionally. */
 @media screen and (max-width: 768px) {
 	html {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	/* Prevent oversized elements after root font bump */
 	h1#title,
 	h1#title a {
-		font-size: 4rem;
+		font-size: clamp(2rem, 12vw, 4rem);
+		word-break: break-word;
+		overflow-wrap: break-word;
 	}
 	p#tagline {
 		font-size: 1.75rem !important;
@@ -307,6 +313,9 @@ nav.vertical .nav-item ul {
 	}
 	header {
 		padding: 2rem 0;
+	}
+	header#header {
+		grid-template-columns: 4.5rem auto 4.5rem;
 	}
 	article {
 		padding: 1rem 1.25rem;
@@ -370,7 +379,7 @@ nav.vertical .nav-item ul {
 		font-size: 1.05rem;
 	}
 
-	.result-box h3 {
-		font-size: 1.5rem;
+	nav#page-controls {
+		font-size: 0.25rem;
 	}
 }
