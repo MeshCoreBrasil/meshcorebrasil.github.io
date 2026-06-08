@@ -332,9 +332,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (total > MAX_NAME_LENGTH) {
             charCountEl.classList.add('char-counter-over');
+            charCountEl.classList.remove('char-counter-ok');
             charLimitWarning.style.display = 'block';
         } else {
             charCountEl.classList.remove('char-counter-over');
+            charCountEl.classList.add('char-counter-ok');
             charLimitWarning.style.display = 'none';
         }
     }

@@ -240,6 +240,10 @@ nav.vertical .nav-item ul {
 	color: var(--md-default-fg-color--light);
 }
 
+.char-counter-value.char-counter-ok {
+	color: #4caf50;
+}
+
 .char-counter-value.char-counter-over {
 	color: #ff6b6b;
 }
