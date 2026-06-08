@@ -28,6 +28,9 @@
   <footer id="footer">
     {% include "partials/footer.html" %}
   </footer>
+  {% if page.file.src_path == "nomes-repetidoras.md" %}
+  <script src="{{ 'js/repeater-name-generator.js' | url }}"></script>
+  {% endif %}
 </body>
 
 </html>

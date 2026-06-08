@@ -45,9 +45,6 @@ nav:
 extra_css:
   - styles/extra.css
 
-extra_javascript:
-  - js/repeater-name-generator.js
-
 plugins:
   - git-revision-date-localized:
       enable_creation_date: false
