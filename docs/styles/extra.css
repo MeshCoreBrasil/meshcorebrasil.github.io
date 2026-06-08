@@ -283,9 +283,42 @@ nav.vertical .nav-item ul {
 	font-size: 0.9rem;
 }
 
-/* Mobile responsiveness: bump up font sizes so form fields
-   appear roughly the same visual size on phone screens */
+/* Mobile responsiveness: increase base font size on phones
+   for better readability (default 16px → 18px). Since the
+   theme uses rem units, this scales all text proportionally. */
 @media screen and (max-width: 768px) {
+	html {
+		font-size: 20px;
+	}
+
+	/* Prevent oversized elements after root font bump */
+	h1#title,
+	h1#title a {
+		font-size: 4rem;
+	}
+	p#tagline {
+		font-size: 1.75rem !important;
+	}
+	ul#socials {
+		font-size: 1.75rem;
+	}
+	nav#site-nav {
+		font-size: 1.35rem;
+	}
+	header {
+		padding: 2rem 0;
+	}
+	article {
+		padding: 1rem 1.25rem;
+		margin-left: -0.5rem;
+	}
+	content#content {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+
+	/* Form fields: bump up font sizes so form fields
+	   appear roughly the same visual size on phone screens */
 	.repeater-form {
 		padding: 1rem;
 	}
