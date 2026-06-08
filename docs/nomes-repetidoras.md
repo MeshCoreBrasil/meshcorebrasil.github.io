@@ -91,8 +91,6 @@ Este formulário ajuda a gerar nomes padronizados para repetidoras **MeshCore** 
 **2)  Reenviar a repetidora para o mapa da Internet**: Na tela anterior, na sua lista de contatos, clique nos três pontos ao lado do nome da repetidora > "Partilhar" > "Carregar para Mapa da Internet".
 </div>
 
-<br>
-
 ## Explicação
 
 Os nomes das repetidoras seguem o formato:
@@ -109,8 +107,6 @@ Onde:
 - **REGIONAL**: Identificador regional como bairro, ponto de referência ou localidade (maiúsculo)
 - **PUBKEY**: Primeiros **4 dígitos** da chave pública (public key) do dispositivo em hexadecimal (maiúsculo)
 
-A padronização dos nomes das repetidoras ajuda os usuários da rede a saberem exatamente o caminho que suas mensagens estão tomando. Além disso, os 4 caracteres da chave pública auxiliam nas análises de pacotes, tanto no app quanto nas plataformas web.
-
 É sugerido que apenas os dispositivos repetidores tenham o nome padronizado. Os dispositivos pessoais (companions) são livres para serem nomeados de qualquer maneira.
 
 Exemplos:
@@ -118,6 +114,14 @@ Exemplos:
 - `SOR-SAOBENTO-A1B2`: Repetidora no mosteiro São Bento de Sorocaba 
 - `SAO-PAULISTA-9D4E`:  Repetidora na Paulista, São Paulo 
 - `SBC-VILANOVA-3C7D`: Repetidora na Vila Nova, São Bernardo do Campo 
+
+## Por que não simplesmente usar qualquer nome?
+
+Sem um padrão, você acaba com nomes como "Nó do João", "teste123" e "Repeater2". Quando se está resolvendo um problema de roteamento ou tentando entender por que uma mensagem deu 6 saltos em vez de 3, esses nomes não dizem nada. Uma convenção de nomenclatura consistente permite que operadores e membros da comunidade:
+
+- Identifiquem a localização do nó sem consultar um mapa;
+- Rastreiem rotas usando o prefixo da chave pública;
+- Evitem conflitos, já que o sufixo da chave pública garante a exclusividade.
 
 ## Consulta reversa
 
