@@ -4,19 +4,19 @@ Esta página tem como objetivo servir a comunidade com configurações de refer�
 
 ## Configuração Recomendada
 
-| Parâmetro | Valor |
-|-----------|-------|
-| **Preset** | Australia: SA, WA |
-| **Frequência** | 923.125 MHz |
-| **Largura de Banda** | 62.5 kHz |
-| **Spreading Factor (SF)** | 8 |
-| **Coding Rate (CR)** | 8 |
+| Parâmetro             | Valor               |
+| --------------------- | ------------------- |
+| Predefinição Selecionada         | `Australia: SA, WA, Brazil` |
+| Frequência            | 923.125 MHz         |
+| Largura de Banda             | 62.5 KHz            |
+| Fator de Espalhamento | 8                   |
+| Taxa de Codificação      | 8                   |
 
 Para usar essas configurações:
 
 1. Abre o aplicativo MeshCore (se estiver usando celular) ou o [cliente web](https://app.meshcore.nz/) (se estiver usando o computador).
 2. Clique no ícone ⚙️ na barra superior.
-3. Em **Radio Settings**, clique em **Choose Preset** e selecione **"Australia: SA, WA"**.
+3. Em **Definições de Rádio**, clique em **Escolher Predefinição** e selecione **"Australia: SA, WA, Brazil"**.
 4. Verifique se os parâmetros estão conforme a tabela acima.
 5. Clique no ícone ✔ no canto superior direito da tela.
 
